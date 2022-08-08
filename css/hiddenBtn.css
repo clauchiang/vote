@@ -1,0 +1,56 @@
+.hidden,
+.hidden *,
+.hidden :after,
+.hidden :before,
+.hidden:after,
+.hidden:before {
+  border:none;
+}
+.hidden {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: whitesmoke;
+  color: DimGray;
+  cursor: pointer;
+  font-size: 100%;
+  line-height: 5px;
+  margin: 0;
+  /* -webkit-mask-image: -webkit-radial-gradient(#EFE1CE, #282D3C); */
+  padding: 0;
+  border-radius: 5px;
+}
+.hidden:disabled {
+  cursor: default;
+}
+/* .hidden:-moz-focusring {
+  outline: auto;
+} */
+.hidden svg {
+  display: block;
+  /* vertical-align: middle; */
+}
+.hidden [hidden] {
+  display: none;
+}
+.hidden {
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 15px 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+.hidden .new {
+  background: DimGray;
+  color: whitesmoke;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+}
+.hidden:hover .new {
+  transform: translateX(0);
+}

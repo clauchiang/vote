@@ -1,0 +1,36 @@
+<!-- 前台登入頁選單 -->
+<div class="nav-header">
+
+    <div class="logo">
+        <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
+    </div>
+    
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="box">
+                <button class="menu">
+                    投票列表
+                </button>
+                <div class="nav-content">
+                    <a href="./index.php?do=vote_list">
+                        <p>所有投票</p>
+                    </a>
+                    <a href="./index.php?do=vote_now">
+                        <p>進行中的投票</p>
+                    </a>
+                    <a href="./index.php?do=vote_old">
+                        <p>已結束的投票</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <a href="users_login.php">登入&nbsp;<i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="users_login.php?do=register">註冊&nbsp;<i class="fa-solid fa-id-card"></i></a>
+        </div>
+    </nav>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<script src="./js/menu.js"></script>

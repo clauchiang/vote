@@ -1,0 +1,19 @@
+.header {
+    top: 0px;
+    z-index: 50;
+    position: absolute;
+}
+
+.bannerSlider{
+    width: 1040px;
+    margin: 100px auto;
+}
+
+.bannerImg{
+    width: 100%;
+    height: 500px;
+}
+
+.slick-arrow{
+    text-shadow: 2px 2px 5px grey;
+}

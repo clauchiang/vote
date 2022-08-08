@@ -1,0 +1,248 @@
+/* 搜尋 */
+.nav-search {
+    width: 500px;
+    margin: auto 0;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.searchForm {
+    display: flex;
+    justify-content: right;
+}
+
+/* 搜尋按鈕 */
+.searchBtn {
+    border: none;
+    padding: 0 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: DimGray;
+    color: whitesmoke;
+}
+
+
+#search[type=text] {
+    width: 125px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 999px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    background-image: url(../img/search.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: right;
+}
+
+#search[type=text]:focus {
+    width: 100%;
+}
+
+/* 登入登出註冊 */
+.nav-right {
+    width: 700px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 排序 */
+.order {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 65px;
+    font-size: 20px;
+}
+
+.order>div {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #282D3C;
+}
+
+.order>div>a {
+    color: #282D3C;
+}
+
+.order>div>a:hover{
+    color: lightslategray;
+}
+
+/* 標題 */
+.listTitle {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 0 25px;
+    color: #282D3C;
+}
+
+/* 投票列表 */
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flipCard {
+    background-color: transparent;
+    width: 340px;
+    height: 340px;
+    perspective: 1000px;
+    padding: 15px;
+    margin: 20px 10px;
+}
+
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.flipCard:hover .cardInner {
+    transform: rotateY(-180deg);
+}
+
+.cardFront,
+.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    padding: 0 10px;
+    padding-top: 15px;
+}
+
+.cardFront {
+    background-color: whitesmoke;
+    color: #282D3C;
+}
+
+.cardFront>* {
+    padding: 5px;
+}
+
+.cardBack {
+    background-color: #282D3C;
+    color: white;
+    transform: rotateY(-180deg);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.listBtn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #282D3C;
+    font-weight: bold;
+}
+
+.listBtn:hover{
+    background-color: #FDAC53;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #282D3C;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: lightslategray;
+}
+
+/* 搜尋結果 */
+.note{
+    text-align: center;
+    padding: 20px;
+}
+
+.btns{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding: 20px 0px;
+}
+
+.btns>*{
+    padding: 0 10px;
+}
+
+/* 會員資料 */
+.userData {
+    margin: 15px 20px 25px;
+    color: #282D3C;
+    font-size: 20px;
+}
+
+#pw,
+#name,
+#email,
+#pw_note{
+    font-size: 20px;
+}
+
+#show{
+    font-size: 15px;
+}
+
+.userData,
+tr,
+td {
+    border: 1px solid #282D3C;
+    border-collapse: collapse;
+    padding: 15px 50px 15px 10px;
+}
+
+.edit{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 20px;
+    margin-top: 50px;
+}
+
+.edit>.btn{
+    margin-left: 20px;
+}
+
+.editBtn{
+    margin: 10px 20px;
+}
+
+.voteList{
+    width: 500px;
+    height: 100px;
+    text-align: left;
+    margin: 20px auto;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    border-radius: 50px;
+}
+
+.voteList:hover{
+    box-shadow:  1px 1px 5px lightslategray;
+}

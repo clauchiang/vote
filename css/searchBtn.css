@@ -1,0 +1,58 @@
+.searchBtn,
+.searchBtn *,
+.searchBtn :after,
+.searchBtn :before,
+.searchBtn:after,
+.searchBtn:before {
+    border: none;
+}
+
+.searchBtn {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: DimGray;
+    background-image: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 100%;
+    line-height: 1.5;
+    /* -webkit-mask-image: -webkit-radial-gradient(DimGray, #fff); */
+}
+
+.searchBtn:disabled {
+    cursor: default;
+}
+
+.searchBtn:-moz-focusring {
+    outline: auto;
+}
+
+.searchBtn svg {
+    display: block;
+    /* vertical-align: middle; */
+}
+
+.searchBtn [hidden] {
+    display: none;
+}
+
+.searchBtn {
+    background: #E0B589;
+    border-radius: 999px;
+    box-shadow: 1px 1px lightslategray;
+    color: whitesmoke;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.searchBtn:active {
+    transform: translateY(3px);
+}
+
+.searchBtn:hover{
+    background-color: #FDAC53;
+}

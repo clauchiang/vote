@@ -1,0 +1,15 @@
+.btn {
+    margin: 30px auto;
+}
+
+.btnS {
+    width: 500px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.voteList>input {
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}

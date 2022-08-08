@@ -1,0 +1,182 @@
+.content {
+    min-height: calc(100vh - 100px - 150px);
+}
+
+.nav-right {
+    width: 200px;
+    justify-content: space-around;
+}
+
+.main {
+    width: 500px;
+    height: 560px;
+    border-radius: 10px;
+    margin: 5vh auto;
+    color: #282D3C;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 5px #282D3C;
+}
+
+.mainReg {
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+    margin: 5vh auto;
+    color: #282D3C;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 5px #282D3C;
+}
+
+/*標題*/
+h1 {
+    text-align: center;
+    padding: 3% 0;
+}
+
+/*錯誤訊息*/
+.error {
+    padding: 10% 3% 0;
+    color: #CD212A;
+}
+
+/*帳號密碼輸入區整體*/
+.text {
+    padding: 3%;
+    margin-bottom: 8%;
+    width: 100%;
+}
+
+/*輸入區*/
+#acc,
+#pw,
+#name,
+#email,
+#pw_note {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+}
+
+/*文字標籤區*/
+#accLabel,
+#pwLabel,
+#nameLabel,
+#emailLabel,
+#pw_noteLabel {
+    width: 100%;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+/*帳號與密碼的間距*/
+.text>p {
+    padding: 5px 0;
+}
+
+/*密碼輸入區變色*/
+#pw:focus {
+    background-color: lavender;
+}
+
+/*調整按鈕與邊框的距離*/
+.buttons {
+    margin: 0 5%;
+}
+
+/*控制按鈕*/
+.button {
+    margin: 1% 0;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: lavender;
+    color: grey;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.button:hover{
+    color: whitesmoke;
+    background-color: lightslategray;
+}
+
+.button:active {
+    background-color: lightslategray;
+    color: whitesmoke;
+}
+
+/* 註冊與忘記密碼 */
+.register {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.register>a {
+    color: #282D3C;
+}
+
+.register>a:hover{
+    color: lightslategray;
+}
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #282D3C;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: lightslategray;;
+}
+
+/* 清單類的排版 */
+.listTable {
+    margin: 10px 20px;
+    color: #282D3C;
+    font-size: 20px;
+    border: 1px dotted #282D3C;
+}
+
+.listTable,
+td {
+    padding: 15px 50px 15px 10px;
+}
+
+#accF,
+#pw_noteF {
+    width: 300px;
+    font-size: 20px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+h2 {
+    margin: 10px 20px;
+}
+
+/* 密碼重複警告 */
+.wrong{
+    color: #CD212A;
+    margin: 10px 20px;
+}
+
+.btns {
+    margin: 20px;
+}
+
+#show{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#show:hover{
+    color: lightslategray;
+}
